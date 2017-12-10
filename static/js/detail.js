@@ -28,5 +28,5 @@ xhr.onload = function () {
 var el_id = document.getElementById('news_id');
 id = el_id.textContent;
 
-xhr.open('GET','https://scrapnbanews.herokuapp.com/myapp/'+ id + '/', true);
+xhr.open('GET','https://scrapnbanews.herokuapp.com/api/myapp/'+ id + '/', true);
 xhr.send();
