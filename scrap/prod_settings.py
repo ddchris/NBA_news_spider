@@ -1,5 +1,5 @@
 from .settings import *
-import dj-database_url
+import dj_database_url
 
 DATABASE = {
 	'default': dj_database_url.config()
