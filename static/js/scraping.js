@@ -38,7 +38,7 @@ var get_data = function() {
 			}
 		//}
 	}
-	xhr.open('GET','http://127.0.0.1:8080/api/myapp/', true);
+	xhr.open('GET','https://scrapnbanews.herokuapp.com/api/myapp/', true);
 	xhr.send();
 }
 
@@ -49,7 +49,7 @@ var renew_database = function() {
 		console.log('scraping finish!');
 	};
 
-	xhr.open('GET','http://127.0.0.1:8080/', true);
+	xhr.open('GET','https://scrapnbanews.herokuapp.com/', true);
 	xhr.send();
 }
 
