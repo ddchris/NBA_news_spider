@@ -1,1 +1,1 @@
-web: gunicorn scrap.wsgi --log-file -
+web: gunicorn --pythonpath scrap scrap.wsgi
