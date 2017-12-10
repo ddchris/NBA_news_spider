@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scraping</title>
+    <style type="text/css">
+        #news_id {
+           display: none;
+        }
+		#story_body_content{
+			width: 900px;
+		}
+		
+
+        h1{
+        	margin-left: 20px;
+        }
+        .shareBar__info--author{
+        	margin-left: 20px;
+        	margin-bottom: 20px;
+        	font-size:  25px;
+        }
+
+        img{
+        	margin-left: 20px;
+        	height: 500px;
+        	width: 900px;
+        }
+
+        p{
+        	margin-left: 20px;
+        }
+
+    </style>
+    <span id="news_id" class="hot">{{page}}</span>
+    <!--要用 js 取值故要放在載入js 前 -->
+    <script type="text/javascript" src="../static/js/detail.js"></script>
+</head>
+
+<body>
+    <h1> 爬蟲-新聞詳細頁面 </h1>
+
+    <div id="story_body_content">
+
+    </div>
+</body>
+</html>

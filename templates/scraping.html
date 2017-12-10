@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scraping</title>
+	<style type="text/css">
+
+		.news{
+			padding: 30px 0;
+		}
+
+		h1{
+			margin-left: 20px;
+		}
+
+		dt a {
+		    display: block;
+		    position: relative;
+		    padding: 0 10px 0 0;
+		    text-decoration: none;
+		    background-color: #ecedef;
+		    overflow: hidden;
+		    -webkit-transition: 0.5s;
+		    transition: 0.5s;
+		    color: #1D1B1B;
+		}
+
+		dt a:hover{
+			background: #968787;
+		}
+
+		dt b{
+			display: inline;
+			line-height: 100px;
+			vertical-align: top;
+		}
+
+		dt h3{
+		    display: block;
+		    font-weight: bold;
+		}
+
+		dt img {
+		    width: 300px;
+		    height: 200px;
+		    float: left;
+		    border: 20px solid rgba(0, 0, 0, 0);
+		}
+
+		* {
+    		-webkit-text-stroke: 0.3px !important;
+		}
+
+
+	</style>
+		<script type="text/javascript" src="../static/js/scraping.js"></script>
+</head>
+
+<body>
+	<h1> 爬蟲-焦點新聞 </h1>
+	<dl id="hot_news">
+	</dl>
+</body>
+</html>
