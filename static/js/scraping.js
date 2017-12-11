@@ -1,4 +1,3 @@
-
 var data = ''
 var get_data = function() {
 	// 建立 XMLHttpRequest 物件
@@ -42,26 +41,19 @@ var get_data = function() {
 	xhr.send();
 }
 
-var renew_database = function() {
+var renew_database_then_run = function() {
 
 	var xhr = new XMLHttpRequest();
 	xhr.onload = function () {
 		console.log('scraping finish!');
+		get_data()
 	};
 
 	xhr.open('GET','https://scrapnbanews.herokuapp.com/', true);
 	xhr.send();
 }
 
-var running = function () {
-	renew_database()
-	get_data()
-}
 
 get_data()
-setInterval(running,1800000);
-// 設定每 10 分鐘跟 api 要一次資料
-
-
-
-
+setInterval(renew_database_then_run,180000);
+// 設定每 3 分鐘跟 api 要一次資料
